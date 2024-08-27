@@ -1,0 +1,341 @@
+﻿User_ID,Age_Category,Gender,Nationality,Interests,Traveler_Category
+1,18-24,Male,USA,"Art_Cultural, Religious",Solo
+2,25-35,Female,UK,"Nature_Wildlife, Scenic_Viewpoints",Solo
+3,36-45,Male,Canada,"Historical, Relaxation_Wellness, Religious",Group
+4,46-60,Female,Australia,"Art_Cultural, Shopping_Local",Couple
+5,18-24,Other,Germany,"Adventure_Hiking, Nature_Wildlife",Solo
+6,25-35,Male,France,"Relaxation_Wellness, Scenic_Viewpoints",Couple
+7,36-45,Female,India,"Historical, Art_Cultural",Solo
+8,46-60,Male,Japan,"Nature_Wildlife, Adventure_Hiking",Group
+9,18-24,Female,Sri Lanka,"Shopping_Local, Relaxation_Wellness",Group
+10,25-35,Male,South Africa,"Adventure_Hiking, Art_Cultural",Solo
+11,36-45,Female,Italy,"Scenic_Viewpoints, Historical",Couple
+12,46-60,Male,Sri Lanka,"Nature_Wildlife, Shopping_Local",Group
+13,18-24,Female,Sri Lanka,"Art_Cultural, Relaxation_Wellness",Group
+14,25-35,Male,USA,"Historical, Adventure_Hiking",Group
+15,36-45,Female,UK,"Nature_Wildlife, Scenic_Viewpoints",Couple
+16,46-60,Male,Canada,"Art_Cultural, Relaxation_Wellness",Solo
+17,18-24,Other,Germany,"Adventure_Hiking, Scenic_Viewpoints",Couple
+18,25-35,Female,France,"Nature_Wildlife, Historical",Group
+19,36-45,Male,Australia,"Relaxation_Wellness, Art_Cultural",Couple
+20,46-60,Female,Japan,"Shopping_Local, Scenic_Viewpoints",Group
+21,18-24,Male,India,"Adventure_Hiking, Relaxation_Wellness",Solo
+22,25-35,Female,Sri Lanka,"Art_Cultural, Nature_Wildlife",Solo
+23,36-45,Male,South Africa,"Historical, Adventure_Hiking",Solo
+24,46-60,Female,Italy,"Relaxation_Wellness, Nature_Wildlife",Couple
+25,18-24,Female,Sri Lanka,"Shopping_Local, Scenic_Viewpoints",Group
+26,25-35,Male,Sri Lanka,"Nature_Wildlife, Historical",Solo
+27,36-45,Female,USA,"Art_Cultural, Adventure_Hiking",Solo
+28,46-60,Male,UK,"Relaxation_Wellness, Nature_Wildlife",Couple
+29,18-24,Male,Canada,"Historical, Adventure_Hiking",Group
+30,25-35,Female,Germany,"Scenic_Viewpoints, Art_Cultural",Solo
+31,36-45,Male,France,"Relaxation_Wellness, Nature_Wildlife",Couple
+32,46-60,Female,Australia,"Adventure_Hiking, Shopping_Local",Couple
+33,18-24,Other,Japan,"Art_Cultural, Nature_Wildlife",Couple
+34,25-35,Male,India,"Historical, Scenic_Viewpoints",Couple
+35,36-45,Female,Sri Lanka,"Adventure_Hiking, Relaxation_Wellness",Solo
+36,46-60,Male,South Africa,"Nature_Wildlife, Art_Cultural",Group
+37,18-24,Female,Italy,"Scenic_Viewpoints, Shopping_Local",Couple
+38,25-35,Male,Sri Lanka,"Nature_Wildlife, Historical",Solo
+39,36-45,Female,Sri Lanka,"Relaxation_Wellness, Adventure_Hiking",Group
+40,46-60,Male,USA,"Art_Cultural, Nature_Wildlife",Solo
+41,18-24,Male,UK,"Historical, Scenic_Viewpoints",Couple
+42,25-35,Female,Canada,"Relaxation_Wellness, Adventure_Hiking",Solo
+43,36-45,Male,Germany,"Art_Cultural, Nature_Wildlife",Group
+44,46-60,Female,France,"Scenic_Viewpoints, Historical",Couple
+45,18-24,Female,Australia,"Adventure_Hiking, Relaxation_Wellness",Solo
+46,25-35,Male,Japan,"Nature_Wildlife, Art_Cultural",Couple
+47,36-45,Female,India,"Historical, Relaxation_Wellness",Solo
+48,46-60,Male,Sri Lanka,"Adventure_Hiking, Nature_Wildlife",Group
+49,18-24,Male,South Africa,"Art_Cultural, Scenic_Viewpoints",Solo
+50,25-35,Female,Italy,"Relaxation_Wellness, Adventure_Hiking",Couple
+51,36-45,Male,Sri Lanka,"Nature_Wildlife, Historical",Group
+52,46-60,Female,Sri Lanka,"Scenic_Viewpoints, Art_Cultural",Group
+53,18-24,Female,USA,"Nature_Wildlife, Shopping_Local",Couple
+54,25-35,Male,UK,"Adventure_Hiking, Historical",Group
+55,36-45,Female,Canada,"Relaxation_Wellness, Nature_Wildlife",Solo
+56,46-60,Male,Germany,"Art_Cultural, Scenic_Viewpoints",Couple
+57,18-24,Male,France,"Adventure_Hiking, Relaxation_Wellness",Group
+58,25-35,Female,Australia,"Nature_Wildlife, Historical",Solo
+59,36-45,Male,Japan,"Art_Cultural, Scenic_Viewpoints",Solo
+60,46-60,Female,India,"Relaxation_Wellness, Adventure_Hiking",Group
+61,18-24,Female,Sri Lanka,"Historical, Nature_Wildlife",Group
+62,25-35,Male,South Africa,"Art_Cultural, Relaxation_Wellness",Couple
+63,36-45,Female,Italy,"Scenic_Viewpoints, Adventure_Hiking",Solo
+64,46-60,Male,Sri Lanka,"Nature_Wildlife, Historical",Solo
+65,18-24,Male,Sri Lanka,"Art_Cultural, Relaxation_Wellness",Group
+66,25-35,Female,USA,"Nature_Wildlife, Historical",Group
+67,36-45,Male,UK,"Scenic_Viewpoints, Adventure_Hiking",Solo
+68,46-60,Female,Canada,"Art_Cultural, Relaxation_Wellness",Couple
+69,18-24,Female,Germany,"Historical, Adventure_Hiking",Solo
+70,25-35,Male,France,"Nature_Wildlife, Scenic_Viewpoints",Group
+71,36-45,Female,Australia,"Art_Cultural, Relaxation_Wellness",Group
+72,46-60,Male,Japan,"Adventure_Hiking, Historical",Group
+73,18-24,Other,India,"Nature_Wildlife, Scenic_Viewpoints",Group
+74,25-35,Female,Sri Lanka,"Relaxation_Wellness, Historical",Couple
+75,36-45,Male,South Africa,"Art_Cultural, Nature_Wildlife",Group
+76,46-60,Female,Italy,"Adventure_Hiking, Scenic_Viewpoints",Group
+77,18-24,Female,Sri Lanka,"Nature_Wildlife, Shopping_Local",Group
+78,25-35,Male,Sri Lanka,"Historical, Art_Cultural",Couple
+79,36-45,Female,USA,"Scenic_Viewpoints, Relaxation_Wellness",Group
+80,46-60,Male,UK,"Adventure_Hiking, Nature_Wildlife",Solo
+81,18-24,Male,Canada,"Art_Cultural, Historical",Group
+82,25-35,Female,Germany,"Nature_Wildlife, Adventure_Hiking",Solo
+83,36-45,Male,France,"Relaxation_Wellness, Scenic_Viewpoints",Group
+84,46-60,Female,Australia,"Historical, Nature_Wildlife",Group
+85,18-24,Female,Japan,"Art_Cultural, Relaxation_Wellness",Group
+86,25-35,Male,India,"Adventure_Hiking, Scenic_Viewpoints",Couple
+87,36-45,Female,Sri Lanka,"Nature_Wildlife, Historical",Couple
+88,46-60,Male,South Africa,"Art_Cultural, Relaxation_Wellness",Solo
+89,18-24,Male,Italy,"Adventure_Hiking, Shopping_Local",Solo
+90,25-35,Female,Sri Lanka,"Historical, Nature_Wildlife",Group
+91,36-45,Male,Sri Lanka,"Relaxation_Wellness, Scenic_Viewpoints",Group
+92,46-60,Female,USA,"Art_Cultural, Adventure_Hiking",Couple
+93,18-24,Female,UK,"Nature_Wildlife, Relaxation_Wellness",Couple
+94,25-35,Male,Canada,"Historical, Scenic_Viewpoints",Couple
+95,36-45,Female,Germany,"Adventure_Hiking, Art_Cultural",Solo
+96,46-60,Male,France,"Nature_Wildlife, Relaxation_Wellness",Solo
+97,18-24,Male,Australia,"Art_Cultural, Historical",Couple
+98,25-35,Female,Japan,"Adventure_Hiking, Nature_Wildlife",Group
+99,36-45,Male,India,"Scenic_Viewpoints, Relaxation_Wellness",Group
+100,46-60,Female,Sri Lanka,"Historical, Art_Cultural",Couple
+101,18-24,Female,South Africa,"Adventure_Hiking, Nature_Wildlife",Couple
+102,25-35,Male,Italy,"Scenic_Viewpoints, Relaxation_Wellness",Solo
+103,36-45,Female,Sri Lanka,"Nature_Wildlife, Historical",Solo
+104,46-60,Male,Sri Lanka,"Art_Cultural, Adventure_Hiking",Couple
+105,18-24,Male,USA,"Nature_Wildlife, Relaxation_Wellness",Solo
+106,25-35,Female,UK,"Historical, Adventure_Hiking",Group
+107,36-45,Male,Canada,"Scenic_Viewpoints, Relaxation_Wellness",Group
+108,46-60,Female,Germany,"Art_Cultural, Historical",Group
+109,18-24,Female,France,"Adventure_Hiking, Nature_Wildlife",Group
+110,25-35,Male,Australia,"Relaxation_Wellness, Scenic_Viewpoints",Couple
+111,36-45,Female,Japan,"Historical, Nature_Wildlife",Group
+112,46-60,Male,India,"Art_Cultural, Relaxation_Wellness",Solo
+113,18-24,Other,Sri Lanka,"Adventure_Hiking, Shopping_Local",Couple
+114,25-35,Female,South Africa,"Nature_Wildlife, Historical",Solo
+115,36-45,Male,Italy,"Art_Cultural, Scenic_Viewpoints",Couple
+116,46-60,Female,Sri Lanka,"Relaxation_Wellness, Adventure_Hiking",Solo
+117,18-24,Female,Sri Lanka,"Nature_Wildlife, Historical",Group
+118,25-35,Male,USA,"Relaxation_Wellness, Scenic_Viewpoints",Group
+119,36-45,Female,UK,"Adventure_Hiking, Art_Cultural",Solo
+120,46-60,Male,Canada,"Nature_Wildlife, Historical",Solo
+121,18-24,Male,Germany,"Art_Cultural, Relaxation_Wellness",Solo
+122,25-35,Female,France,"Scenic_Viewpoints, Nature_Wildlife",Solo
+123,36-45,Male,Australia,"Adventure_Hiking, Historical",Couple
+124,46-60,Female,Japan,"Art_Cultural, Nature_Wildlife",Group
+125,18-24,Other,India,"Relaxation_Wellness, Adventure_Hiking",Group
+126,25-35,Male,Sri Lanka,"Nature_Wildlife, Historical",Solo
+127,36-45,Female,South Africa,"Art_Cultural, Scenic_Viewpoints",Couple
+128,46-60,Male,Italy,"Relaxation_Wellness, Adventure_Hiking",Couple
+129,18-24,Female,Sri Lanka,"Historical, Nature_Wildlife",Couple
+130,25-35,Male,Sri Lanka,"Scenic_Viewpoints, Art_Cultural",Couple
+131,36-45,Female,USA,"Relaxation_Wellness, Nature_Wildlife",Group
+132,46-60,Male,UK,"Adventure_Hiking, Historical",Couple
+133,18-24,Male,Canada,"Nature_Wildlife, Art_Cultural",Solo
+134,25-35,Female,Germany,"Historical, Scenic_Viewpoints",Solo
+135,36-45,Male,France,"Relaxation_Wellness, Nature_Wildlife",Couple
+136,46-60,Female,Australia,"Art_Cultural, Adventure_Hiking",Couple
+137,18-24,Female,Japan,"Nature_Wildlife, Relaxation_Wellness",Solo
+138,25-35,Male,India,"Art_Cultural, Scenic_Viewpoints",Group
+139,36-45,Female,Sri Lanka,"Historical, Nature_Wildlife",Group
+140,46-60,Male,South Africa,"Relaxation_Wellness, Adventure_Hiking",Solo
+141,18-24,Male,Italy,"Adventure_Hiking, Nature_Wildlife",Couple
+142,25-35,Female,Sri Lanka,"Art_Cultural, Scenic_Viewpoints",Couple
+143,36-45,Male,Sri Lanka,"Historical, Relaxation_Wellness",Solo
+144,46-60,Female,USA,"Scenic_Viewpoints, Adventure_Hiking",Solo
+145,18-24,Female,UK,"Nature_Wildlife, Historical",Couple
+146,25-35,Male,Canada,"Relaxation_Wellness, Historical",Couple
+147,36-45,Female,Germany,"Art_Cultural, Scenic_Viewpoints",Solo
+148,46-60,Male,France,"Nature_Wildlife, Adventure_Hiking",Solo
+149,18-24,Male,Australia,"Relaxation_Wellness, Art_Cultural",Couple
+150,25-35,Female,Japan,"Nature_Wildlife, Historical",Couple
+151,36-45,Male,India,"Scenic_Viewpoints, Art_Cultural",Couple
+152,46-60,Female,Sri Lanka,"Adventure_Hiking, Nature_Wildlife",Couple
+153,18-24,Female,South Africa,"Historical, Relaxation_Wellness",Solo
+154,25-35,Male,Italy,"Art_Cultural, Scenic_Viewpoints",Group
+155,36-45,Female,Sri Lanka,"Nature_Wildlife, Historical",Group
+156,46-60,Male,Sri Lanka,"Relaxation_Wellness, Adventure_Hiking",Couple
+157,18-24,Male,USA,"Art_Cultural, Nature_Wildlife",Group
+158,25-35,Female,UK,"Historical, Relaxation_Wellness",Solo
+159,36-45,Male,Canada,"Adventure_Hiking, Nature_Wildlife",Solo
+160,46-60,Female,Germany,"Scenic_Viewpoints, Historical",Couple
+161,18-24,Female,Japan,"Adventure_Hiking, Art_Cultural",Solo
+162,25-35,Male,Sri Lanka,"Scenic_Viewpoints, Nature_Wildlife",Group
+163,36-45,Female,South Africa,"Historical, Relaxation_Wellness",Group
+164,46-60,Male,Italy,"Art_Cultural, Scenic_Viewpoints",Group
+165,18-24,Male,Sri Lanka,"Historical, Relaxation_Wellness",Couple
+166,25-35,Female,Sri Lanka,"Nature_Wildlife, Art_Cultural",Solo
+167,36-45,Male,USA,"Scenic_Viewpoints, Relaxation_Wellness",Couple
+168,46-60,Female,UK,"Historical, Adventure_Hiking",Solo
+169,18-24,Female,Canada,"Art_Cultural, Historical",Couple
+170,25-35,Male,Germany,"Relaxation_Wellness, Scenic_Viewpoints",Solo
+171,36-45,Female,France,"Nature_Wildlife, Art_Cultural",Solo
+172,46-60,Male,Australia,"Historical, Adventure_Hiking",Group
+173,18-24,Male,Japan,"Art_Cultural, Nature_Wildlife",Group
+174,25-35,Female,India,"Relaxation_Wellness, Scenic_Viewpoints",Group
+175,36-45,Male,Sri Lanka,"Art_Cultural, Historical",Group
+176,46-60,Female,South Africa,"Adventure_Hiking, Nature_Wildlife",Solo
+177,18-24,Female,Italy,"Nature_Wildlife, Relaxation_Wellness",Couple
+178,25-35,Male,USA,"Art_Cultural, Adventure_Hiking",Solo
+179,36-45,Female,Canada,"Historical, Relaxation_Wellness",Couple
+180,46-60,Male,Germany,"Nature_Wildlife, Scenic_Viewpoints",Group
+181,18-24,Male,South Africa,"Relaxation_Wellness, Art_Cultural",Couple
+182,25-35,Female,Australia,"Scenic_Viewpoints, Nature_Wildlife",Solo
+183,36-45,Male,Japan,"Historical, Adventure_Hiking",Couple
+184,46-60,Female,India,"Art_Cultural, Relaxation_Wellness",Couple
+185,18-24,Female,Sri Lanka,"Scenic_Viewpoints, Nature_Wildlife",Couple
+186,25-35,Male,South Africa,"Adventure_Hiking, Historical",Solo
+187,36-45,Female,Italy,"Relaxation_Wellness, Scenic_Viewpoints",Solo
+188,46-60,Male,USA,"Adventure_Hiking, Historical",Couple
+189,18-24,Male,Canada,"Relaxation_Wellness, Nature_Wildlife",Couple
+190,25-35,Female,Germany,"Art_Cultural, Relaxation_Wellness",Group
+191,36-45,Male,France,"Adventure_Hiking, Nature_Wildlife",Group
+192,46-60,Female,Australia,"Scenic_Viewpoints, Historical",Group
+193,18-24,Female,Japan,"Historical, Relaxation_Wellness",Couple
+194,25-35,Male,India,"Scenic_Viewpoints, Adventure_Hiking",Solo
+195,36-45,Female,Sri Lanka,"Historical, Nature_Wildlife",Group
+196,46-60,Male,South Africa,"Scenic_Viewpoints, Adventure_Hiking",Solo
+197,18-24,Male,Italy,"Nature_Wildlife, Adventure_Hiking",Solo
+198,25-35,Female,USA,"Relaxation_Wellness, Scenic_Viewpoints",Group
+199,36-45,Male,Canada,"Historical, Nature_Wildlife",Couple
+200,46-60,Female,Germany,"Adventure_Hiking, Scenic_Viewpoints",Solo
+201,18-24,Female,South Africa,"Art_Cultural, Relaxation_Wellness",Solo
+202,25-35,Male,Italy,"Nature_Wildlife, Historical",Group
+203,36-45,Female,Sri Lanka,"Scenic_Viewpoints, Adventure_Hiking",Group
+204,46-60,Male,Sri Lanka,"Art_Cultural, Relaxation_Wellness",Couple
+205,18-24,Male,USA,"Nature_Wildlife, Historical",Couple
+206,25-35,Female,Canada,"Scenic_Viewpoints, Adventure_Hiking",Couple
+207,36-45,Male,Germany,"Nature_Wildlife, Art_Cultural",Solo
+208,46-60,Female,France,"Relaxation_Wellness, Scenic_Viewpoints",Couple
+209,18-24,Male,Australia,"Historical, Adventure_Hiking",Couple
+210,25-35,Female,Japan,"Scenic_Viewpoints, Nature_Wildlife",Solo
+211,36-45,Male,India,"Adventure_Hiking, Historical",Solo
+212,46-60,Female,Sri Lanka,"Nature_Wildlife, Relaxation_Wellness",Solo
+213,18-24,Female,South Africa,"Historical, Art_Cultural",Group
+214,25-35,Male,Sri Lanka,"Relaxation_Wellness, Nature_Wildlife",Group
+215,36-45,Female,USA,"Historical, Art_Cultural",Solo
+216,46-60,Male,Canada,"Scenic_Viewpoints, Relaxation_Wellness",Group
+217,18-24,Male,Germany,"Historical, Adventure_Hiking",Group
+218,25-35,Female,France,"Art_Cultural, Nature_Wildlife",Couple
+219,36-45,Male,Australia,"Relaxation_Wellness, Historical",Group
+220,46-60,Female,Japan,"Adventure_Hiking, Scenic_Viewpoints",Couple
+221,18-24,Female,India,"Nature_Wildlife, Art_Cultural",Solo
+222,25-35,Male,Sri Lanka,"Scenic_Viewpoints, Historical",Group
+223,36-45,Female,South Africa,"Adventure_Hiking, Nature_Wildlife",Couple
+224,46-60,Male,Italy,"Relaxation_Wellness, Scenic_Viewpoints",Solo
+225,18-24,Female,USA,"Adventure_Hiking, Nature_Wildlife",Solo
+226,25-35,Male,South Africa,"Historical, Relaxation_Wellness",Couple
+227,36-45,Female,Canada,"Art_Cultural, Relaxation_Wellness",Solo
+228,46-60,Male,Germany,"Nature_Wildlife, Historical",Solo
+229,18-24,Male,Japan,"Nature_Wildlife, Scenic_Viewpoints",Couple
+230,25-35,Female,India,"Adventure_Hiking, Historical",Solo
+231,36-45,Male,Sri Lanka,"Relaxation_Wellness, Scenic_Viewpoints",Couple
+232,46-60,Female,South Africa,"Art_Cultural, Nature_Wildlife",Group
+233,18-24,Female,Canada,"Scenic_Viewpoints, Relaxation_Wellness",Solo
+234,25-35,Male,USA,"Art_Cultural, Historical",Solo
+235,36-45,Female,Japan,"Relaxation_Wellness, Nature_Wildlife",Group
+236,46-60,Male,Italy,"Adventure_Hiking, Historical",Group
+237,18-24,Female,Sri Lanka,"Art_Cultural, Scenic_Viewpoints",Solo
+238,25-35,Male,Canada,"Adventure_Hiking, Historical",Couple
+239,36-45,Female,Sri Lanka,"Relaxation_Wellness, Scenic_Viewpoints",Couple
+240,46-60,Male,USA,"Art_Cultural, Nature_Wildlife",Couple
+241,18-24,Male,USA,"Art_Cultural, Historical, Religious",Group
+242,25-35,Female,UK,"Religious, Kid_friendly",Solo
+243,36-45,Male,Canada,"Art_Cultural, Religious, Kid_friendly",Solo
+244,46-60,Female,Australia,"Historical, Religious",Couple
+245,18-24,Other,Germany,"Religious, Scenic_Viewpoints",Group
+246,25-35,Male,France,"Art_Cultural, Religious",Couple
+247,36-45,Female,India,"Religious, Nature_Wildlife, Kid_friendly",Solo
+248,46-60,Male,Japan,"Religious, Shopping_Local",Couple
+249,18-24,Female,Sri Lanka,"Art_Cultural, Historical, Religious, Kid_friendly",Solo
+250,25-35,Male,South Africa,"Religious, Relaxation_Wellness",Group
+251,36-45,Female,Italy,"Historical, Religious, Kid_friendly",Group
+252,46-60,Male,Sri Lanka,"Art_Cultural, Religious, Scenic_Viewpoints",Group
+253,18-24,Female,Sri Lanka,"Religious, Adventure_Hiking",Couple
+254,25-35,Male,USA,"Nature_Wildlife, Religious, Kid_friendly",Group
+255,36-45,Female,UK,"Historical, Religious, Nature_Wildlife",Group
+256,46-60,Male,Canada,"Art_Cultural, Religious, Shopping_Local",Solo
+257,18-24,Female,Australia,"Religious, Scenic_Viewpoints, Kid_friendly",Solo
+258,25-35,Male,Germany,"Religious, Art_Cultural",Group
+259,36-45,Female,France,"Historical, Religious, Scenic_Viewpoints",Solo
+260,46-60,Male,India,"Art_Cultural, Religious, Relaxation_Wellness",Solo
+261,18-24,Other,Japan,"Religious, Adventure_Hiking, Kid_friendly",Solo
+262,25-35,Female,Sri Lanka,"Art_Cultural, Historical, Religious, Scenic_Viewpoints",Solo
+263,36-45,Male,South Africa,"Religious, Kid_friendly, Shopping_Local",Group
+264,46-60,Female,Italy,"Nature_Wildlife, Religious",Solo
+265,18-24,Male,Canada,"Art_Cultural, Religious, Relaxation_Wellness, Kid_friendly",Couple
+266,25-35,Female,USA,"Religious, Scenic_Viewpoints, Adventure_Hiking",Couple
+267,36-45,Male,UK,"Art_Cultural, Religious, Kid_friendly",Solo
+268,46-60,Female,Australia,"Historical, Art_Cultural, Religious",Group
+269,18-24,Other,France,"Relaxation_Wellness, Religious",Couple
+270,25-35,Male,Germany,"Religious, Shopping_Local, Kid_friendly",Solo
+271,36-45,Female,Japan,"Historical, Religious, Relaxation_Wellness",Group
+272,46-60,Male,Sri Lanka,"Art_Cultural, Religious, Nature_Wildlife",Solo
+273,18-24,Female,South Africa,"Religious, Relaxation_Wellness, Kid_friendly",Solo
+274,25-35,Male,Italy,"Art_Cultural, Historical, Religious, Kid_friendly",Solo
+275,36-45,Female,Canada,"Nature_Wildlife, Religious, Scenic_Viewpoints",Solo
+276,46-60,Male,USA,"Historical, Religious, Kid_friendly, Scenic_Viewpoints",Group
+277,18-24,Other,UK,"Religious, Adventure_Hiking, Scenic_Viewpoints",Group
+278,25-35,Female,Australia,"Art_Cultural, Religious",Couple
+279,36-45,Male,Germany,"Religious, Kid_friendly",Group
+280,46-60,Female,France,"Art_Cultural, Historical, Religious, Scenic_Viewpoints",Group
+281,18-24,Male,Sri Lanka,"Religious, Nature_Wildlife",Couple
+282,25-35,Female,Japan,"Historical, Art_Cultural, Religious, Kid_friendly",Solo
+283,36-45,Male,South Africa,"Religious, Relaxation_Wellness",Couple
+284,46-60,Female,Italy,"Scenic_Viewpoints, Religious",Couple
+285,18-24,Other,USA,"Art_Cultural, Religious, Adventure_Hiking",Group
+286,25-35,Male,UK,"Historical, Religious, Shopping_Local",Solo
+287,36-45,Female,Canada,"Religious, Relaxation_Wellness, Shopping_Local",Couple
+288,46-60,Male,Australia,"Nature_Wildlife, Religious, Scenic_Viewpoints",Solo
+289,18-24,Female,France,"Art_Cultural, Historical, Religious",Couple
+290,25-35,Male,Germany,"Religious, Kid_friendly",Solo
+291,36-45,Female,Japan,"Art_Cultural, Religious, Relaxation_Wellness",Couple
+292,46-60,Male,Sri Lanka,"Historical, Religious, Nature_Wildlife, Kid_friendly",Couple
+293,18-24,Other,South Africa,"Religious, Shopping_Local",Solo
+294,25-35,Female,Italy,"Nature_Wildlife, Religious, Kid_friendly",Group
+295,36-45,Male,Canada,"Art_Cultural, Historical, Religious, Shopping_Local",Solo
+296,46-60,Female,USA,"Religious, Scenic_Viewpoints",Group
+297,18-24,Male,UK,"Adventure_Hiking, Religious, Kid_friendly",Solo
+298,25-35,Female,Australia,"Historical, Religious",Solo
+299,36-45,Male,France,"Art_Cultural, Religious, Kid_friendly",Solo
+300,46-60,Female,Germany,"Religious, Relaxation_Wellness, Nature_Wildlife",Couple
+301,18-24,Other,Japan,"Art_Cultural, Religious, Scenic_Viewpoints, Kid_friendly",Group
+302,25-35,Male,Sri Lanka,"Historical, Religious, Scenic_Viewpoints",Solo
+303,36-45,Female,South Africa,"Religious, Shopping_Local",Group
+304,46-60,Male,Italy,"Nature_Wildlife, Religious",Solo
+305,18-24,Female,Canada,"Art_Cultural, Historical, Religious",Group
+306,25-35,Male,USA,"Religious, Kid_friendly",Couple
+307,36-45,Female,UK,"Relaxation_Wellness, Religious",Couple
+308,46-60,Male,Australia,"Art_Cultural, Religious, Kid_friendly",Group
+309,18-24,Other,France,"Historical, Religious, Adventure_Hiking",Group
+310,25-35,Female,Germany,"Religious, Kid_friendly, Scenic_Viewpoints",Group
+311,36-45,Male,Japan,"Nature_Wildlife, Religious, Kid_friendly",Couple
+312,46-60,Female,Sri Lanka,"Art_Cultural, Historical, Religious",Couple
+313,18-24,Male,South Africa,"Religious, Relaxation_Wellness, Kid_friendly",Couple
+314,25-35,Female,Italy,"Historical, Religious",Group
+315,36-45,Male,Canada,"Religious, Kid_friendly, Shopping_Local",Group
+316,46-60,Female,USA,"Art_Cultural, Religious, Scenic_Viewpoints",Couple
+317,18-24,Other,UK,"Nature_Wildlife, Religious",Couple
+318,25-35,Male,Australia,"Historical, Religious, Nature_Wildlife",Group
+319,36-45,Female,France,"Religious, Kid_friendly, Adventure_Hiking",Solo
+320,46-60,Male,Germany,"Art_Cultural, Religious, Relaxation_Wellness",Couple
+321,18-24,Female,Japan,"Religious, Scenic_Viewpoints",Solo
+322,25-35,Male,Sri Lanka,"Art_Cultural, Historical, Religious, Kid_friendly",Group
+323,36-45,Female,South Africa,"Historical, Religious",Group
+324,46-60,Male,Italy,"Nature_Wildlife, Religious",Group
+325,25-35,Female,USA,"Religious, Kid_friendly, Adventure_Hiking",Couple
+326,36-45,Male,Japan,"Art_Cultural, Historical, Religious",Group
+327,36-45,Female,Sri Lanka,"Nature_Wildlife, Relaxation_Wellness, Religious",Couple
+328,18-24,Male,South Africa,"Historical, Religious",Couple
+329,25-35,Female,Italy,"Art_Cultural, Religious",Group
+330,25-35,Male,Canada,"Religious, Kid_friendly",Solo
+331,25-35,Female,India,"Historical, Religious",Group
+332,36-45,Male,Germany,"Religious, Adventure_Hiking",Group
+333,46-60,Female,Japan,"Art_Cultural, Historical, Religious",Solo
+334,18-24,Male,Sri Lanka,"Religious, Scenic_Viewpoints, Kid_friendly",Couple
+335,25-35,Female,Germany,"Nature_Wildlife, Religious",Solo
+336,36-45,Male,UK,"Art_Cultural, Religious, Shopping_Local",Solo
+337,25-35,Female,Australia,"Historical, Religious",Solo
+338,36-45,Male,France,"Religious, Kid_friendly, Relaxation_Wellness",Solo
+339,46-60,Female,Sri Lanka,"Art_Cultural, Religious, Scenic_Viewpoints",Solo
+340,18-24,Male,South Africa,"Historical, Religious",Group
