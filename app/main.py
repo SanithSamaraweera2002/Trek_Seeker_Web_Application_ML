@@ -3,11 +3,21 @@ from pydantic import BaseModel
 from typing import List, Dict, Any
 import joblib
 import pickle
+from fastapi.middleware.cors import CORSMiddleware
 
 from app.destination_recommendations import get_recommendations
 from app.itinerary_generator import generate_itinerary
 
 app = FastAPI()
+
+# CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], 
+    allow_credentials=True,
+    allow_methods=["*"],  
+    allow_headers=["*"], 
+)
 
 knn_model = joblib.load('app/model/knn_model.joblib')
 label_encoders = pickle.load(open('app/model/label_encoders.pkl', 'rb'))
@@ -29,12 +39,12 @@ class UserData(BaseModel):
 @app.post("/recommendations/")
 def get_itinerary(user_data: UserData):
     try:
-        # Get recommendations based on user data
+        # Recommendations based on user data
         recommendations = get_recommendations(knn_model, label_encoders, mlb, user_data.dict())
 
         recommendations_list = [rec['Name'] for rec in recommendations]
 
-        # Step 2: Pass recommendations to the itinerary generator
+        # Pass recommendations to itinerary generator
         itinerary = generate_itinerary(recommendations_list, user_data.city, user_data.duration)
         
         return itinerary

@@ -40,8 +40,8 @@ def get_recommendations(model, label_encoders, mlb, user_data):
             encoded_input['Traveler_Category']
         ]
 
-        # Apply a higher weight to the interests vector
-        weighted_interests_vector = interests_vector * 3  # Adjust weight based on importance
+        # higher weight interests
+        weighted_interests_vector = interests_vector * 3 
         input_vector.extend(weighted_interests_vector)
 
         # Find the top 5 similar users using the passed model
@@ -108,20 +108,20 @@ def get_recommendations(model, label_encoders, mlb, user_data):
 
     
 
-    # Step 1: Extract data from user input
+    # Extract user input
     age_category = user_data['age_category']
     gender = user_data['gender']
     nationality = user_data['nationality']
     traveler_category = user_data['traveler_category']
     interests = user_data['interests']
 
-    # Step 2: Collaborative Filtering - Get similar users and destinations
+    # Collaborative filtering
     similar_users, collab_destinations = get_similar_users_and_destinations(model, age_category, gender, nationality, traveler_category, interests)
 
-    # Step 3: Independent Content-Based Filtering
+    # Content Based Filtering
     independent_destinations = independent_content_based_filtering(interests, destinations)
 
-    # Step 4: Combine and Weight Recommendations
+    # Combine
     final_recommendations = combine_and_weight_recommendations(collab_destinations, independent_destinations)
 
     return final_recommendations

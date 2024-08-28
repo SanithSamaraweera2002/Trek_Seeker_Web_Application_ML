@@ -52,7 +52,7 @@ def load_distance_matrix(city):
     city_files = {
         'Colombo': 'app/data/Colombo_dt.xlsx',
         'Nuwara Eliya': 'app/data/Nuwara_Eliya_dt.xlsx',
-        # 'Kandy': 'app/data/Kandy.xlsx',
+        'Kandy': 'app/data/Kandy_dt.xlsx',
         'Galle': 'app/data/Galle_dt.xlsx'
     }
 
@@ -110,11 +110,13 @@ def dijkstra(distance_matrix, start, filtered_destinations):
 def create_itinerary(destinations, time_spent, trip_duration=600):
     itinerary = []
     total_time = 0
+    buffer_time = 30
     
     for destination, travel_time in sorted(destinations.items(), key=lambda x: x[1]):
         if destination not in time_spent:
             continue
         visit_time = time_spent[destination]
+        travel_time += buffer_time
         if total_time + travel_time + visit_time > trip_duration:
             break
         itinerary.append((destination, travel_time, visit_time))
@@ -142,7 +144,7 @@ def create_multi_day_itinerary(filtered_destinations, distance_matrix, start, vi
         day_itinerary = []
         current_time = day_start_time
 
-        for order, (destination, travel_time, visit_time) in enumerate(itinerary, start=1):
+        for order, (destination, travel_time, visit_time) in enumerate(itinerary[:4], start=1):
                # Convert numpy.int64 to Python int
             travel_time = int(travel_time)
             visit_time = int(visit_time)
@@ -164,10 +166,15 @@ def create_multi_day_itinerary(filtered_destinations, distance_matrix, start, vi
             current_time = time_to + timedelta(minutes=travel_time)
         
         total_itinerary.append({
-            f"Day {day}": day_itinerary
+            # f"Day {day}": day_itinerary
+            "DayNumber": day,
+            "destinations": day_itinerary
         })
 
-        last_destination = itinerary[-1][0]  # Next day start destination
+        # last_destination = itinerary[-1][0]  # Next day start destination
+
+        leftover_destinations = itinerary[4:]  # Store destinations not included in this day
+        last_destination = leftover_destinations[0][0] if leftover_destinations else itinerary[-1][0]  # Update start point for next day
 
         for destination, _, _ in itinerary:
             if destination in visit_times:
@@ -188,18 +195,18 @@ def create_multi_day_itinerary(filtered_destinations, distance_matrix, start, vi
 #         print(f"Visit {destination}, Travel Time: {travel_time} mins, Visit Time: {visit_time} mins")
 
 def generate_itinerary(recommendations, city, duration):
-    # Convert recommendations to list if it’s a DataFrame
+    # Convert to list
     recommendations_list = [rec['Name'] for rec in recommendations] if isinstance(recommendations, pd.DataFrame) else recommendations
 
     filtered_destinations = filter_destinations_by_city(recommendations_list, city, cities)
 
-    # Create a dictionary of visit times for filtered destinations
+    # Visits time dict
     visit_times = {dest: time_spent.get(dest, 0) for dest in filtered_destinations}
     
-    # Load distance matrix for the selected city
+    # matrix for selected city
     distance_matrix = load_distance_matrix(city)
 
-    # Use a mock starting point
+    # Start
     # start_point = 'Ambewela Farm'
     start_point = random.choice(filtered_destinations)
 
@@ -209,7 +216,9 @@ def generate_itinerary(recommendations, city, duration):
     itinerary = create_multi_day_itinerary(filtered_destinations, distance_matrix, start_point, visit_times, days=days)
     
     # Return the formatted itinerary
-    return {
-        "trip_name": "My Custom Trip",
-        "destinations": itinerary
-    }
+    # return {
+    #     "trip_name": "My Custom Trip",
+    #     "destinations": itinerary
+    # }
+
+    return itinerary
