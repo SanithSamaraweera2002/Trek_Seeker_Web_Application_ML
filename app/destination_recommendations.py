@@ -98,7 +98,7 @@ def get_recommendations(model, label_encoders, mlb, user_data):
         # Fetch names
         top_recommendations = top_recommendations.merge(destinations[['Destination_ID', 'Name']], on='Destination_ID')
     
-        top_recommendations = top_recommendations.head(30)
+        top_recommendations = top_recommendations.head(50)
     
         # print("Combined and Weighted Recommendations:")
         # print(top_recommendations[['Name', 'Weighted_Score']])
@@ -123,6 +123,9 @@ def get_recommendations(model, label_encoders, mlb, user_data):
 
     # Combine
     final_recommendations = combine_and_weight_recommendations(collab_destinations, independent_destinations)
+    # print("FINAL RECOMMENDATIONS NEW:")
+    # for recommendation in final_recommendations:
+    #     print(f"- {recommendation}")
 
     return final_recommendations
 

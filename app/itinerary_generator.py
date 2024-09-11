@@ -84,6 +84,7 @@ def load_distance_matrix(city):
 def dijkstra(distance_matrix, start, filtered_destinations):
     destinations = distance_matrix.columns
     distances = {destination: float('inf') for destination in destinations}
+    # print("dist", distances)
     distances[start] = 0
     priority_queue = [(0, start)]
 
@@ -106,50 +107,82 @@ def dijkstra(distance_matrix, start, filtered_destinations):
 
     return distances
 
-# Itinerary Creat
-def create_itinerary(destinations, time_spent, trip_duration=600):
+def create_itinerary(filtered_destinations, distance_matrix, start, visit_times, day_duration=600):
     itinerary = []
     total_time = 0
-    buffer_time = 30
-    
-    for destination, travel_time in sorted(destinations.items(), key=lambda x: x[1]):
-        if destination not in time_spent:
-            continue
-        visit_time = time_spent[destination]
-        travel_time += buffer_time
-        if total_time + travel_time + visit_time > trip_duration:
+
+    current_start = start
+
+    print("filtered_destinations",filtered_destinations)
+    print("visit_times",visit_times)
+
+    for _ in range(len(filtered_destinations)):
+        if total_time >= day_duration:
             break
-        itinerary.append((destination, travel_time, visit_time))
+
+        # Dijkstra's algorithm
+        distances = dijkstra(distance_matrix, current_start, filtered_destinations)
+        
+        # Sort by asc travel time
+        sorted_destinations = sorted(distances.items(), key=lambda x: x[1])
+        
+        # Get nearest destination
+        top_destination = None
+        travel_time = None
+        
+        for destination, time in sorted_destinations:
+            if destination not in [dest for dest, _, _ in itinerary] and destination in visit_times:
+                top_destination = destination
+                travel_time = time
+                print(f"Top destination: {top_destination}, Travel time: {travel_time}")
+                break
+
+        if top_destination is None:
+            break
+
+        visit_time = visit_times[top_destination]
+        
+        if total_time + travel_time + visit_time > day_duration:
+            break
+
+        # Add top destination to the itinerary
+        itinerary.append((top_destination, travel_time, visit_time))
         total_time += travel_time + visit_time
+
+        # Update current point
+        current_start = top_destination
 
     return itinerary
 
-# Itinerary Multi Day
+
 def create_multi_day_itinerary(filtered_destinations, distance_matrix, start, visit_times, days, day_duration=600):
     total_itinerary = []
     day_start_time = datetime.strptime('08:00 AM', '%I:%M %p')
 
     remaining_destinations = visit_times.keys()
     last_destination = start
+    leftover_destinations = [] 
 
     for day in range(1, days + 1):
-        distances = dijkstra(distance_matrix, last_destination, filtered_destinations)
-        itinerary = create_itinerary(distances, visit_times, day_duration)
+        # Current day itinerary create
+        itinerary = create_itinerary(filtered_destinations, distance_matrix, last_destination, visit_times, day_duration)
+
+        print(f"Day {day} Itinerary: {itinerary}")
 
         if not itinerary:
             break
-
-        # total_itinerary[f'Day {day}'] = itinerary
 
         day_itinerary = []
         current_time = day_start_time
 
         for order, (destination, travel_time, visit_time) in enumerate(itinerary[:4], start=1):
-               # Convert numpy.int64 to Python int
             travel_time = int(travel_time)
             visit_time = int(visit_time)
 
-            time_from = current_time
+            if order == 1:
+                travel_time = 0
+
+            time_from = current_time + timedelta(minutes=travel_time)
             time_to = time_from + timedelta(minutes=visit_time)
             
             day_itinerary.append({
@@ -162,27 +195,31 @@ def create_multi_day_itinerary(filtered_destinations, distance_matrix, start, vi
                 "travel_time": travel_time
             })
 
-            # Update current time to account for travel and visit time
-            current_time = time_to + timedelta(minutes=travel_time)
+            current_time = time_to 
         
         total_itinerary.append({
-            # f"Day {day}": day_itinerary
             "DayNumber": day,
             "destinations": day_itinerary
         })
 
-        # last_destination = itinerary[-1][0]  # Next day start destination
+        # Store destinations not used 
+        leftover_destinations = itinerary[4:] 
 
-        leftover_destinations = itinerary[4:]  # Store destinations not included in this day
-        last_destination = leftover_destinations[0][0] if leftover_destinations else itinerary[-1][0]  # Update start point for next day
+        # Starting point for next day
+        last_destination = leftover_destinations[0][0] if leftover_destinations else itinerary[-1][0]
 
-        for destination, _, _ in itinerary:
-            if destination in visit_times:
-                del visit_times[destination]
+         # Destinations of todays itinerary 
+        visited_today = [destination for destination, _, _ in itinerary[:4]]
 
-        remaining_destinations = visit_times.keys()
-        if not remaining_destinations:
-            break
+        # Remove destinations included in todays itinerary from visit time
+        visit_times = {key: val for key, val in visit_times.items() if key not in visited_today}
+
+        #  Remove destinations included in todays itinerary from filtered_destinations
+        filtered_destinations = [dest for dest in filtered_destinations if dest not in visited_today]
+
+        # CHECK LATER
+        # if not visit_times:
+        #     break
 
     return total_itinerary
 
